@@ -30,7 +30,11 @@ Docker running Nginx, PHP-FPM, Composer, MySQL and PHPMyAdmin env.
 
 7. [Use Docker Commands](#use-docker-commands)
 
-    When running, you can use docker commands for doing recurrent operations.
+   When running, you can use docker commands for doing recurrent operations.
+
+8. Install mysql_pdo into the docker php container
+   sudo docker exec -it [container_name] docker-php-ext-install pdo pdo_mysql
+
 
 ___
 

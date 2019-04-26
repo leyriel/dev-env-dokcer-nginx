@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-03-22 23:14:09.713 UTC</timestamp>
+  <md5sum>667f4d58cd94310c810784b59f7f12dc</md5sum>
+  <fileName>Credential id=02ff5ac0-f4b9-4874-b61f-12da4857ffa3 name=leyriel/******</fileName>
+  <usages>
+    <entry>
+      <string>prod-webrise-api</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

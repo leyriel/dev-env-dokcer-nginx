@@ -1,0 +1,12 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.cloudbees.jenkins.plugins.bitbucket.endpoints.BitbucketEndpointConfiguration plugin="cloudbees-bitbucket-branch-source@2.4.2">
+  <endpoints>
+    <com.cloudbees.jenkins.plugins.bitbucket.endpoints.BitbucketServerEndpoint>
+      <manageHooks>false</manageHooks>
+      <displayName>Webrise-repo</displayName>
+      <serverUrl>https://leyriel@bitbucket.org/leyriel</serverUrl>
+      <webhookImplementation>PLUGIN</webhookImplementation>
+      <callCanMerge>true</callCanMerge>
+    </com.cloudbees.jenkins.plugins.bitbucket.endpoints.BitbucketServerEndpoint>
+  </endpoints>
+</com.cloudbees.jenkins.plugins.bitbucket.endpoints.BitbucketEndpointConfiguration>

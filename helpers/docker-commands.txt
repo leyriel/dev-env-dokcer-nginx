@@ -1,0 +1,19 @@
+# Install mysql_pdo in docker container
+docker exec -it <container ID> docker-php-ext-install pdo pdo_mysql
+
+# Install and use node/NPM in docker container
+docker run -v $(pwd):/usr/src/app -w /usr/src/app node:8.9.4 npm install
+
+# Install yarn via npm docker container
+docker run -v $(pwd):/usr/src/app -w /usr/src/app node:8.9.4 npm i yarn
+
+# Exemple dependency installation with yarn
+docker run -v $(pwd):/usr/src/app -w /usr/src/app node:8.9.4 yarn add bootstrap --dev
+
+# Display docker container log
+docker logs --tail 50 --follow --timestamps mediawiki_web_1
+
+# Genrate an SSL certificat with certBot letsEncrypt in docker nginx container
+docker run --rm -ti --volumes-from nginx_web_server -v /var/log/letsencrypt/ -v /etc/letsencrypt/ deliverous/certbot certonly -d webrise.fr
+docker run --rm -ti --volumes-from nginx_web_server -v /var/log/letsencrypt/ -v /etc/letsencrypt/ deliverous/certbot certonly --webroot -w /var/www/html/certs/webrise/.well-known/acme-challenge  -d webrise.fr
+

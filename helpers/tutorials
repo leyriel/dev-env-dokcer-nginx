@@ -1,0 +1,10 @@
+# Docker server mail tutorial urls
+https://homputersecurity.com/2018/02/16/guide-dinstallation-dun-serveur-mail-sur-docker/
+https://omnos.fr/la-maniere-la-plus-simple-dinstaller-un-serveur-mail-avec-docker-mailserver/
+
+# Combine pem files for haproxy cert format
+DOMAIN='atelier-bee.fr' sudo -E bash -c 'cat /home/env/email-sever/etc/live/atelier-bee.fr/fullchain.pem /home/env/email-sever/etc/live/atelier-bee.fr/privkey.pem > <pathTOSaveNewFileCombined>'
+
+# Combine pem files for haproxy cert format-->webrise.fr
+DOMAIN='webrise.fr' sudo -E bash -c 'cat /home/env/dev-env-dokcer-nginx/etc/letsencrypt/live/webrise.fr/fullchain.pem /home/env/dev-env-dokcer-nginx/etc/letsencrypt/live/webrise.fr/privkey.pem > webrise.pem'
+
